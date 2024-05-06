@@ -1,21 +1,21 @@
 class Solution {
 public:
    // APPROACH -1 
-    // int lengthOfLastWord(string s) {
-    //     int n=s.size();
-    //     int len=0;
-    //     bool found=false;
-    //     for(int i=n-1; i>=0; i--){
-    //         if(s[i]!=' '){
-    //             len++;
-    //             found=true;
-    //         }
-    //         else if(found==true){
-    //             break;
-    //         }
-    //     }
-    //     return len;
-    // }
+    int lengthOfLastWord(string s) {
+        int n=s.size();
+        int len=0;
+        bool found=false;
+        for(int i=n-1; i>=0; i--){
+            if(s[i]!=' '){
+                len++;
+                found=true;
+            }
+            else if(found==true){
+                break;
+            }
+        }
+        return len;
+    }
 
     // APPROACH -2 // STL FUNCTIONS
     int lengthOfLastWord(string s) {
